@@ -1534,7 +1534,6 @@ nav#main-menu {
     padding-top: 40px;
     width: 100%;
     padding-bottom:0;
-    margin-left: 10px;
 }
 #inner-content, .inner-content{
 	clear:both;
@@ -3344,25 +3343,35 @@ span.wpcf7-list-item {
 
 /* 2017 */
 
-/* Project Single */
-.vert-center {
-  min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
-  min-height: 100vh; /* These two lines are counted as one :-)       */
 
-  display: flex;
-  align-items: center;
+/*Vertical Center Bootstrap Fluid Content*/
+.parent {
+  position: relative;
 }
+.child {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+}
+
+
+/* Project Single */
+
+
+
 
 .projIntro {
 	min-height: 400px;
 	background-color: #5c9a98;
-	vertical-align: middle;
 }
 .projStat {
+	text-align: center;
 	background-color:#f8981d;
 	color: #ffffff;
 	font-family:'Montserrat', sans-serif;
 	font-weight:400;
 	font-size: 3em;
+	vertical-align: middle;
 }
 

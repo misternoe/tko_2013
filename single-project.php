@@ -109,18 +109,20 @@ single-bookmarks.php
                 <div id="main" class="first clearfix" role="main">
                 	<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
                 		<article id="post-<?php the_ID(); ?>" <?php post_class('clearfix'); ?> role="article" itemscope itemtype="http://schema.org/BlogPosting">
-                			<section class="entry-content container-fluid clearfix" itemprop="articleBody">
-									<div class="col-sm-12 projIntro vert-center">
-										<div class="col-sm-4 projStat">
+                			<section class="entry-content clearfix" itemprop="articleBody">
+								<div class="container-fluid projIntro parent">
+									<div class="row projStat child">
+										<div class="col-sm-4">
 											100% something
 										</div>
-										<div class="col-sm-4 projStat">
+										<div class="col-sm-4">
 											100% something
 										</div>
-										<div class="col-sm-4 projStat">
+										<div class="col-sm-4">
 											100% something
 										</div>
 									</div>
+								</div>
 								</section> <!-- end article section -->
 
 								<footer class="article-footer">
