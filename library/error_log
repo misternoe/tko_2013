@@ -1,0 +1,2 @@
+[31-Jan-2014 08:17:02 UTC] PHP Fatal error:  Call to undefined function add_action() in /home/tkoadves/public_html/wp-content/themes/tko_2013/library/bones.php on line 20
+[14-Mar-2014 12:55:50 UTC] PHP Fatal error:  Call to undefined function add_action() in /home/tkoadves/public_html/wp-content/themes/tko_2013/library/bones.php on line 20

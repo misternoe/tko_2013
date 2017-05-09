@@ -1,0 +1,152 @@
+/* ==================================================
+   Team profiles
+   ================================================== */
+   
+   .hidden-info {
+	   
+	   display:
+   }
+
+.profiles {
+  margin-bottom: -20px;
+}
+.people {
+	position: relative;
+}
+
+
+.intro {
+
+}
+.intro h2 {
+  margin: 0 0 7px;
+}
+.intro .lead {
+  line-height: 120%;
+  font-size: 1.1em;
+  margin: 0 0 35px;
+}
+.profile {
+  position: relative;
+  margin: 0 0 20px;
+}
+.profile-header {
+    text-decoration: none;
+    overflow: hidden;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    margin: 0px;
+    width: 100%;
+    float: left;
+}
+.profile-pic {
+    position: relative;
+    width: 100%;
+    margin-bottom: 1em;
+    height: 300px;
+    background-size: 100% auto;
+}
+.profile-pic:hover {
+	background-position: 0 100%;
+	
+}
+
+.profile-pic h3 {
+    padding: 20px;
+    font-size: 200%;
+    color: rgb(243, 243, 243);
+    bottom: 0px;
+    position: absolute;
+    height: auto;
+    width: 100%;
+    margin: 0px;
+    background-image: url("title-bgfade.png");
+    background-repeat: repeat-x;
+    background-size: auto 100%;
+}
+
+
+.profile-content {
+    font-size: 14px;
+    padding: 0;
+    line-height: 1.4em;
+    margin: 1em 0 0 0;
+    height: auto;
+    width: 100%;
+    background: none repeat scroll 0% 0% transparent;
+    float: left;
+}
+.profile-content h3 {
+  margin: 0;
+}
+.profile-content .lead {
+  font-size: 1.3em;
+  line-height: 100%;
+  margin: 3px 0 20px;
+}
+
+.profile-content p {
+    margin: 0 0 1em 0;
+    position: relative;
+    clear: both;
+    width: auto;
+    padding: 0px;
+}
+.profile-footer {
+    top: 0px;
+    width: auto;
+    text-align: center;
+    margin: 0px 0px 1em;
+    clear: both;
+    float: left;
+    width: 100%;
+}
+.profile-footer a {
+    line-height: 18px;
+    margin: 0px 3px;
+    display: inline-block;
+    text-indent: -9999px;
+    height: 30px;
+    width: 30px;
+    background: red;
+    float: left;
+}
+.profile-footer a:hover i {
+  color: #595959;
+}
+.profile-footer a:active i {
+  color: #000;
+}
+.profile-footer i {
+  font-size: 18px;
+  position: relative;
+}
+.profile-footer i.icon-envelope {
+  font-size: 16px;
+  top: -1px;
+}
+.profile-footer i.icon-linkedin {
+  font-size: 16px;
+  top: -1px;
+}
+
+.people .profile {
+    padding: 0px;
+    margin: 0px 1.5% 2em;
+    width: 30%;
+    height: auto;
+    float: left;
+}
+
+@media all and (max-width: 320px) {
+
+.profile-content {
+	clear:both;
+	width: 90%;
+}
+
+.profile-header {
+	width:90%;
+}
+
+}

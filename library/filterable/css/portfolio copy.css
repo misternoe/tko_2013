@@ -1,0 +1,257 @@
+
+/*-------------------------
+
+PORTFOLIO-FILTER 
+
+--------------------------*/
+
+ul#portfolio-filter {
+    position: relative;
+    height: auto;
+    line-height: 40px;
+    background: none repeat scroll 0% 0% rgb(255, 255, 255);
+    margin: 0px;
+    padding: 0px;
+    z-index: 9;
+    width: 100%;
+    float: left; /*keeps portfolio items below menu*/;
+    font-family: 'Montserrat',sans-serif;
+}
+
+ul#portfolio-filter span {
+    text-transform: uppercase;
+    font-size: 0.7em;
+    padding: 0px;
+    display: block;
+    float: left;
+    margin-right: 20px;
+}
+
+ul#portfolio-filter li {
+display:inline-block !important;
+float: left;
+width: auto !important;
+}
+
+ul#portfolio-filter a {
+    margin-right: 0.5em;
+    background: none repeat scroll 0% 0% rgb(255, 255, 255);
+    color: rgb(170, 170, 170);
+    text-decoration: none;
+    padding: 0.5em 1em;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 80%;
+}
+
+ul#portfolio-filter a:hover,ul#portfolio-filter a.current {
+color:#888;
+}
+
+ul#portfolio-filter a.current {
+background-color:#DDD;
+}
+
+
+
+
+
+
+
+/*-------------------------
+
+PORTFOLIO-LIST/GRID 
+
+--------------------------*/
+
+ul#portfolio-list {
+    list-style: none outside none;
+    margin: 0 auto;
+    padding: 0px;
+    height: auto;
+    width: 100%;
+    clear: both;
+    display: inline-block; /* fixes chrome whitespace issue */
+	/*
+	-moz-column-count:4;
+    -moz-column-gap: 0;
+    -moz-column-width: 20%;
+    -webkit-column-count:4;
+    -webkit-column-gap: 0;
+    -webkit-column-width: 20%;
+    column-count: 4;
+    column-gap: 0;
+    column-width: 20%;
+	*/
+	overflow:hidden;
+	
+}
+
+
+ul#portfolio-list li {
+    border: 0px solid rgb(68, 68, 68);
+    overflow: hidden;
+    background-color: rgb(34, 34, 34);
+    position: relative !important;
+    display: inline-block;
+	float:left;
+    width: 25%;
+    height: 200px;
+    max-height: 200px;
+	margin:0;
+}
+ul#portfolio-list li:last-child {
+	margin-right: 0 !improtant;
+}
+
+ul#portfolio-list li a img {
+    height: auto;
+    width: 500px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -250px;
+    margin-left: -250px;
+}
+
+
+.project-desc {
+    left: 0px;
+    width: 100%;
+    padding: 0px;
+    background: url("../bg-trans-dark.png") repeat scroll 0% 0% transparent;
+    top: 0;
+    position: absolute;
+    height: auto;
+    margin-top: 50%;
+    height: 100%;
+}
+
+ul#portfolio-list li h3 {
+    border: medium none !important;
+    font-size: 90%;
+    color: #fff;
+    margin: 0px auto;
+    background: none repeat scroll 0% 0%;
+    text-align: left;
+    font-weight: bold;
+    height: auto;
+    padding: 0px !important;
+    width: 100%;
+    left: 0px;
+    bottom: 60px;
+    display: block;
+}
+
+ul#portfolio-list li h3 a {
+    display: block;
+    padding: 10px 20px;
+    min-height: 75px;
+	color: #fff;
+}
+
+ul#portfolio-list li p.excerpt {
+    font-size: 80%;
+    margin: 0px;
+    left: 0px;
+    width: 100%;
+    text-align: left;
+    background: none repeat scroll 0% 0%;
+    bottom: 0px;
+    padding: 0px !important;
+    display: block;
+}
+
+ul#portfolio-list li p.excerpt a {
+    padding: 10px 20px;
+    display: block;
+    min-height: 60px;
+	color:#bbb;
+}
+
+
+#portfolio-list .portfolio-item {
+    margin: 0px;
+}
+
+.portfolio-item .thumb  {
+	display: block;
+	height: 100%;
+	width: 100%;
+}
+
+
+
+
+	
+	
+/*	
+	RESPONSIVE 
+	PORTFOLIO FILTER/OPTIONS
+--------------------------------------------------------------*/
+@media all and (min-width: 10px ){
+
+	
+}
+
+	
+	
+
+/*	
+	RESPONSIVE 
+	PORTFOLIO LIST/GRID
+--------------------------------------------------------------*/
+
+
+@media all and (min-width: 2400px ) {
+	ul#portfolio-list li {
+    width: 20% !important;  Floats this PERCENTAGE across width of PARENT. */
+	}
+}
+
+@media all and (max-width: 2000px ) {
+	
+ul#portfolio-list li {
+    width: 25% !important;
+}
+}
+
+@media all and (max-width: 1024px) {
+	
+ul#portfolio-list li {
+    width: 33% !important;
+	margin:0;
+}
+}
+
+
+@media all and (max-width: 821px) {
+
+ul#portfolio-filter {
+    position: relative;
+    height: auto;
+    line-height: 40px;
+    background: none repeat scroll 0% 0% rgb(255, 255, 255);
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    overflow: auto;
+}
+
+ul#portfolio-filter li {
+    width: 50%;
+	max-height: 150px;
+}
+}
+
+@media all and (max-width: 480px) {
+
+ul#portfolio-list li {
+    width: 100% !important;
+	max-height:220px;
+}
+}
+
+
+
+

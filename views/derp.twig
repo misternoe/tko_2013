@@ -1,0 +1,11 @@
+{% extends 'base.twig' %}
+
+{% block content %}
+
+<section>
+  <h1>{{ post.get_field('hero_title') }}</h1>
+  
+  <img src="{{ TimberImage(post.get_field('hero_image')).src }}" alt="{{ TimberImage(post.get_field('hero_image')).alt }}">
+</section>
+
+{% endblock %}

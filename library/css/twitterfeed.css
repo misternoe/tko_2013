@@ -1,0 +1,157 @@
+/* --------------------
+Basic Formatting
+-----------------------*/
+
+.post-display * {
+	margin: 0;
+	z-index:99;
+    white-space: pre-wrap; /* css-3 */    
+    white-space: -moz-pre-wrap; /* Mozilla, since 1999 */
+    white-space: -pre-wrap; /* Opera 4-6 */    
+    white-space: -o-pre-wrap; /* Opera 7 */    
+    word-wrap: break-word; /* Internet Explorer 5.5+ */
+   }
+
+.post-display .user {
+    clear: both;
+    text-align: left;
+    background: none repeat scroll 0% 0% ;
+    width: 100%;
+}
+
+.post-display .user a {
+    margin-bottom: 0px;
+    margin-left: 0px;
+    display: block;
+    position: relative;
+    line-height: 0.25em;
+    float: left;
+}
+
+.post-display img {
+    margin-left: 1em;
+    left: 0px;
+    width: 30px;
+    height: 30px;
+    float: left;
+    line-height: 45px;
+    background: none repeat scroll 0% 0% transparent;
+    padding: 0px;
+    margin-right: 1em;
+    margin-top: 1em;
+    display: block;
+}
+
+.post-display .tweet {
+    font-size: 90%;
+    position: relative;
+	background: none repeat scroll 0px 0px transparent;
+	color: rgb(100, 100, 100);
+	float: left;
+	font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-size: 0.85em;
+	padding: 1em;
+	width: 100%;
+}
+
+.post-display .timePosted {
+    display: block;
+    width: ;
+    clear: both;
+	margin-left: 12px;
+	font-size:60%;
+}
+
+.post-display .interact {
+    display: block;
+    width: 100%;
+    clear: both;
+}
+.post-display .interact a {
+	margin-left: 12px;
+	font-size:60%;
+}
+
+
+/* --------------------
+Alternative Layout Fix
+-----------------------*/
+
+.post-display .timePosted {
+	display:none;	
+}
+
+.post-display .interact {
+	display: none;	
+}
+.post-display .user {
+    background: none repeat scroll 0% 0% transparent;
+    float: left;
+    display: block;
+}
+.post-display .user img {
+	visibility: hidden;
+}
+.post-display .user span {
+    display: none; /* inline-block */
+    float: left;
+    line-height: 1.5em;
+    margin: 0px;
+}
+
+.post-display .tweet a {
+	color: #e98922;	
+}
+@media screen and (min-width: 1440px){
+	.post-display .tweet {
+	}
+}
+@media screen and (max-width: 1030px){
+.post-display .tweet {
+}
+}
+
+@media screen and (max-width: 960px){
+	.post-display .tweet {
+}
+}
+
+@media screen and (max-width: 920px){
+	.post-display .tweet {
+	}
+}
+
+
+@media screen and (max-width: 768px){
+	#tweet-1 {
+		width: 100%;
+	}
+	#tweet-2,
+	#tweet-3  {
+		display: none !important;
+	}
+}
+
+@media screen and (max-width: 720px){
+	.post-display .user a {
+	    margin-left: 0;
+	}
+.post-display .tweet {
+}
+}
+
+@media screen and (max-width: 480px){
+	.post-display .tweet {
+    width: 100%;
+    padding-right: .1em;
+    font-size: .9em;
+	}	
+
+}
+
+@media screen and (max-width: 360px){
+	.post-display .tweet {
+    font-size: 1.2em;
+	}
+	
+}

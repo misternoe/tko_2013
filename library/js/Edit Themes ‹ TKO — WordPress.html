@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<!--[if IE 8]>
+<html xmlns="http://www.w3.org/1999/xhtml" class="ie8 wp-toolbar"  lang="en-US">
+<![endif]-->
+<!--[if !(IE 8) ]><!-->
+<html xmlns="http://www.w3.org/1999/xhtml" class="wp-toolbar" lang="en-US"><!--<![endif]--><head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Edit Themes ‹ TKO — WordPress</title>
+<script type="text/javascript">
+addLoadEvent = function(func){if(typeof jQuery!="undefined")jQuery(document).ready(func);else if(typeof wpOnload!='function'){wpOnload=func;}else{var oldonload=wpOnload;wpOnload=function(){oldonload();func();}}};
+var ajaxurl = '/wp-admin/admin-ajax.php',
+	pagenow = 'theme-editor',
+	typenow = '',
+	adminpage = 'theme-editor-php',
+	thousandsSeparator = ',',
+	decimalPoint = '.',
+	isRtl = 0;
+</script>
+<link rel="stylesheet" href="Edit%20Themes%20%E2%80%B9%20TKO%20%E2%80%94%20WordPress_files/load-styles.css" type="text/css" media="all">
+<link rel="stylesheet" id="colors-css" href="Edit%20Themes%20%E2%80%B9%20TKO%20%E2%80%94%20WordPress_files/colors-fresh.css" type="text/css" media="all">
+<!--[if lte IE 7]>
+<link rel='stylesheet' id='ie-css'  href='http://localhost:8888/wp-admin/css/ie.min.css' type='text/css' media='all' />
+<![endif]-->
+
+<script type="text/javascript">
+/* <![CDATA[ */
+var userSettings = {"url":"\/","uid":"1","time":"1375905468"};/* ]]> */
+</script>
+<script type="text/javascript" src="Edit%20Themes%20%E2%80%B9%20TKO%20%E2%80%94%20WordPress_files/load-scripts.js"></script>
+<style type="text/css"> 
+	#adminmenu #toplevel_page_edit-post_type-acf a[href="edit.php?post_type=acf&page=acf-upgrade"]{ display:none; }
+	#adminmenu #toplevel_page_edit-post_type-acf .wp-menu-image { background-position: 1px -33px; }
+	#adminmenu #toplevel_page_edit-post_type-acf:hover .wp-menu-image,
+	#adminmenu #toplevel_page_edit-post_type-acf.wp-menu-open .wp-menu-image { background-position: 1px -1px; }
+</style>
+		<style type="text/css" media="print">#wpadminbar { display:none; }</style>
+</head>
+<body class="wp-admin wp-core-ui js  theme-editor-php auto-fold admin-bar branch-3-5 version-3-5-2 admin-color-fresh locale-en-us no-customize-support">
+<script type="text/javascript">
+	document.body.className = document.body.className.replace('no-js','js');
+</script>
+
+
+<div id="wpwrap">
+<a tabindex="1" href="#wpbody-content" class="screen-reader-shortcut">Skip to main content</a>
+
+<div id="adminmenuback"></div>
+<div id="adminmenuwrap">
+<div id="adminmenushadow"></div>
+<ul id="adminmenu" role="navigation">
+
+
+	<li class="wp-first-item wp-has-submenu wp-not-current-submenu menu-top menu-top-first menu-icon-dashboard menu-top-last" id="menu-dashboard">
+	<a href="http://localhost:8888/wp-admin/index.php" class="wp-first-item wp-has-submenu wp-not-current-submenu menu-top menu-top-first menu-icon-dashboard menu-top-last" aria-haspopup="true"><div class="wp-menu-arrow"><div></div></div><div class="wp-menu-image"><br></div><div class="wp-menu-name">Dashboard</div></a>
+	<ul class="wp-submenu wp-submenu-wrap"><li class="wp-submenu-head">Dashboard</li><li class="wp-first-item"><a href="http://localhost:8888/wp-admin/index.php" class="wp-first-item">Home</a></li><li><a href="http://localhost:8888/wp-admin/update-core.php">Updates <span class="update-plugins count-2" title="1 WordPress Update, 1 Plugin Update"><span class="update-count">2</span></span></a></li></ul></li>
+	<li class="wp-not-current-submenu wp-menu-separator"><div class="separator"></div></li>
+	<li class="wp-has-submenu wp-not-current-submenu open-if-no-js menu-top menu-icon-post menu-top-first" id="menu-posts">
+	<a href="http://localhost:8888/wp-admin/edit.php" class="wp-has-submenu wp-not-current-submenu open-if-no-js menu-top menu-icon-post menu-top-first" aria-haspopup="true"><div class="wp-menu-arrow"><div></div></div><div class="wp-menu-image"><br></div><div class="wp-menu-name">Posts</div></a>
+	<ul class="wp-submenu wp-submenu-wrap"><li class="wp-submenu-head">Posts</li><li class="wp-first-item"><a href="http://localhost:8888/wp-admin/edit.php" class="wp-first-item">All Posts</a></li><li><a href="http://localhost:8888/wp-admin/post-new.php">Add New</a></li><li><a href="http://localhost:8888/wp-admin/edit-tags.php?taxonomy=category">Categories</a></li><li><a href="http://localhost:8888/wp-admin/edit-tags.php?taxonomy=post_tag">Tags</a></li></ul></li>
+	<li class="wp-has-submenu wp-not-current-submenu menu-top menu-icon-custom_type" id="menu-posts-custom_type">
+	<a href="http://localhost:8888/wp-admin/edit.php?post_type=custom_type" class="wp-has-submenu wp-not-current-submenu menu-top menu-icon-custom_type" aria-haspopup="true"><div class="wp-menu-arrow"><div></div></div><div class="wp-menu-image"><img src="Edit%20Themes%20%E2%80%B9%20TKO%20%E2%80%94%20WordPress_files/custom-post-icon.png" alt=""></div><div class="wp-menu-name">Custom Types</div></a>
+	<ul class="wp-submenu wp-submenu-wrap"><li class="wp-submenu-head">Custom Types</li><li class="wp-first-item"><a href="http://localhost:8888/wp-admin/edit.php?post_type=custom_type" class="wp-first-item">All Custom Posts</a></li><li><a href="http://localhost:8888/wp-admin/post-new.php?post_type=custom_type">Add New</a></li><li><a href="http://localhost:8888/wp-admin/edit-tags.php?taxonomy=category&amp;post_type=custom_type">Categories</a></li><li><a href="http://localhost:8888/wp-admin/edit-tags.php?taxonomy=post_tag&amp;post_type=custom_type">Tags</a></li><li><a href="http://localhost:8888/wp-admin/edit-tags.php?taxonomy=custom_cat&amp;post_type=custom_type">Custom Categories</a></li><li><a href="http://localhost:8888/wp-admin/edit-tags.php?taxonomy=custom_tag&amp;post_type=custom_type">Custom Tags</a></li></ul></li>
+	<li class="wp-has-submenu wp-not-current-submenu menu-top menu-icon-media" id="menu-media">
+	<a href="http://localhost:8888/wp-admin/upload.php" class="wp-has-submenu wp-not-current-submenu menu-top menu-icon-media" aria-haspopup="true"><div class="wp-menu-arrow"><div></div></div><div class="wp-menu-image"><br></div><div class="wp-menu-name">Media</div></a>
+	<ul class="wp-submenu wp-submenu-wrap"><li class="wp-submenu-head">Media</li><li class="wp-first-item"><a href="http://localhost:8888/wp-admin/upload.php" class="wp-first-item">Library</a></li><li><a href="http://localhost:8888/wp-admin/media-new.php">Add New</a></li></ul></li>
+	<li class="wp-has-submenu wp-not-current-submenu menu-top menu-icon-page" id="menu-pages">
+	<a href="http://localhost:8888/wp-admin/edit.php?post_type=page" class="wp-has-submenu wp-not-current-submenu menu-top menu-icon-page" aria-haspopup="true"><div class="wp-menu-arrow"><div></div></div><div class="wp-menu-image"><br></div><div class="wp-menu-name">Pages</div></a>
+	<ul class="wp-submenu wp-submenu-wrap"><li class="wp-submenu-head">Pages</li><li class="wp-first-item"><a href="http://localhost:8888/wp-admin/edit.php?post_type=page" class="wp-first-item">All Pages</a></li><li><a href="http://localhost:8888/wp-admin/post-new.php?post_type=page">Add New</a></li></ul></li>
+	<li class="wp-not-current-submenu menu-top menu-icon-comments menu-top-last" id="menu-comments">
+	<a href="http://localhost:8888/wp-admin/edit-comments.php" class="wp-not-current-submenu menu-top menu-icon-comments menu-top-last"><div class="wp-menu-arrow"><div></div></div><div class="wp-menu-image"><br></div><div class="wp-menu-name">Comments <span class="awaiting-mod count-0"><span class="pending-count">0</span></span></div></a></li>
+	<li class="wp-not-current-submenu wp-menu-separator"><div class="separator"></div></li>
+	<li class="wp-has-submenu wp-has-current-submenu wp-menu-open menu-top menu-icon-appearance menu-top-first" id="menu-appearance">
+	<a href="http://localhost:8888/wp-admin/themes.php" class="wp-has-submenu wp-has-current-submenu wp-menu-open menu-top menu-icon-appearance menu-top-first"><div class="wp-menu-arrow"><div></div></div><div class="wp-menu-image"><br></div><div class="wp-menu-name">Appearance</div></a>
+	<ul class="wp-submenu wp-submenu-wrap"><li class="wp-submenu-head">Appearance</li><li class="wp-first-item"><a href="http://localhost:8888/wp-admin/themes.php" class="wp-first-item">Themes</a></li><li><a href="http://localhost:8888/wp-admin/widgets.php">Widgets</a></li><li><a href="http://localhost:8888/wp-admin/nav-menus.php">Menus</a></li><li><a href="http://localhost:8888/wp-admin/themes.php?page=custom-background">Background</a></li><li class="current"><a href="http://localhost:8888/wp-admin/theme-editor.php" class="current">Editor</a></li></ul></li>
+	<li class="wp-has-submenu wp-not-current-submenu menu-top menu-icon-plugins" id="menu-plugins">
+	<a href="http://localhost:8888/wp-admin/plugins.php" class="wp-has-submenu wp-not-current-submenu menu-top menu-icon-plugins" aria-haspopup="true"><div class="wp-menu-arrow"><div></div></div><div class="wp-menu-image"><br></div><div class="wp-menu-name">Plugins <span class="update-plugins count-1"><span class="plugin-count">1</span></span></div></a>
+	<ul class="wp-submenu wp-submenu-wrap"><li class="wp-submenu-head">Plugins <span class="update-plugins count-1"><span class="plugin-count">1</span></span></li><li class="wp-first-item"><a href="http://localhost:8888/wp-admin/plugins.php" class="wp-first-item">Installed Plugins</a></li><li><a href="http://localhost:8888/wp-admin/plugin-install.php">Add New</a></li><li><a href="http://localhost:8888/wp-admin/plugin-editor.php">Editor</a></li></ul></li>
+	<li class="wp-has-submenu wp-not-current-submenu menu-top menu-icon-users" id="menu-users">
+	<a href="http://localhost:8888/wp-admin/users.php" class="wp-has-submenu wp-not-current-submenu menu-top menu-icon-users" aria-haspopup="true"><div class="wp-menu-arrow"><div></div></div><div class="wp-menu-image"><br></div><div class="wp-menu-name">Users</div></a>
+	<ul class="wp-submenu wp-submenu-wrap"><li class="wp-submenu-head">Users</li><li class="wp-first-item"><a href="http://localhost:8888/wp-admin/users.php" class="wp-first-item">All Users</a></li><li><a href="http://localhost:8888/wp-admin/user-new.php">Add New</a></li><li><a href="http://localhost:8888/wp-admin/profile.php">Your Profile</a></li></ul></li>
+	<li class="wp-has-submenu wp-not-current-submenu menu-top menu-icon-tools" id="menu-tools">
+	<a href="http://localhost:8888/wp-admin/tools.php" class="wp-has-submenu wp-not-current-submenu menu-top menu-icon-tools" aria-haspopup="true"><div class="wp-menu-arrow"><div></div></div><div class="wp-menu-image"><br></div><div class="wp-menu-name">Tools</div></a>
+	<ul class="wp-submenu wp-submenu-wrap"><li class="wp-submenu-head">Tools</li><li class="wp-first-item"><a href="http://localhost:8888/wp-admin/tools.php" class="wp-first-item">Available Tools</a></li><li><a href="http://localhost:8888/wp-admin/import.php">Import</a></li><li><a href="http://localhost:8888/wp-admin/export.php">Export</a></li></ul></li>
+	<li class="wp-has-submenu wp-not-current-submenu menu-top menu-icon-settings" id="menu-settings">
+	<a href="http://localhost:8888/wp-admin/options-general.php" class="wp-has-submenu wp-not-current-submenu menu-top menu-icon-settings" aria-haspopup="true"><div class="wp-menu-arrow"><div></div></div><div class="wp-menu-image"><br></div><div class="wp-menu-name">Settings</div></a>
+	<ul class="wp-submenu wp-submenu-wrap"><li class="wp-submenu-head">Settings</li><li class="wp-first-item"><a href="http://localhost:8888/wp-admin/options-general.php" class="wp-first-item">General</a></li><li><a href="http://localhost:8888/wp-admin/options-writing.php">Writing</a></li><li><a href="http://localhost:8888/wp-admin/options-reading.php">Reading</a></li><li><a href="http://localhost:8888/wp-admin/options-discussion.php">Discussion</a></li><li><a href="http://localhost:8888/wp-admin/options-media.php">Media</a></li><li><a href="http://localhost:8888/wp-admin/options-permalink.php">Permalinks</a></li></ul></li>
+	<li class="wp-has-submenu wp-not-current-submenu menu-top menu-icon-generic toplevel_page_edit?post_type=acf menu-top-last" id="toplevel_page_edit-post_type-acf">
+	<a href="http://localhost:8888/wp-admin/edit.php?post_type=acf" class="wp-has-submenu wp-not-current-submenu menu-top menu-icon-generic toplevel_page_edit?post_type=acf menu-top-last" aria-haspopup="true"><div class="wp-menu-arrow"><div></div></div><div class="wp-menu-image"><br></div><div class="wp-menu-name">Custom Fields</div></a>
+	<ul class="wp-submenu wp-submenu-wrap"><li class="wp-submenu-head">Custom Fields</li><li class="wp-first-item"><a href="http://localhost:8888/wp-admin/edit.php?post_type=acf" class="wp-first-item">Custom Fields</a></li><li><a href="http://localhost:8888/wp-admin/edit.php?post_type=acf&amp;page=acf-export">Export</a></li><li><a href="http://localhost:8888/wp-admin/edit.php?post_type=acf&amp;page=acf-addons">Add-ons</a></li><li><a href="http://localhost:8888/wp-admin/edit.php?post_type=acf&amp;page=acf-upgrade">Upgrade</a></li></ul></li><li id="collapse-menu" class="hide-if-no-js"><div id="collapse-button"><div></div></div><span>Collapse menu</span></li></ul>
+</div>
+<div id="wpcontent">
+
+		<div id="wpadminbar" class="" role="navigation">
+			<a class="screen-reader-shortcut" href="#wp-toolbar" tabindex="1">Skip to toolbar</a>
+			<div class="quicklinks" id="wp-toolbar" role="navigation" aria-label="Top navigation toolbar." tabindex="0">
+				<ul id="wp-admin-bar-root-default" class="ab-top-menu">
+		<li id="wp-admin-bar-wp-logo" class="menupop"><a class="ab-item" aria-haspopup="true" href="http://localhost:8888/wp-admin/about.php" title="About WordPress"><span class="ab-icon"></span></a><div class="ab-sub-wrapper"><ul id="wp-admin-bar-wp-logo-default" class="ab-submenu">
+		<li id="wp-admin-bar-about"><a class="ab-item" href="http://localhost:8888/wp-admin/about.php">About WordPress</a>		</li></ul><ul id="wp-admin-bar-wp-logo-external" class="ab-sub-secondary ab-submenu">
+		<li id="wp-admin-bar-wporg"><a class="ab-item" href="http://wordpress.org/">WordPress.org</a>		</li>
+		<li id="wp-admin-bar-documentation"><a class="ab-item" href="http://codex.wordpress.org/">Documentation</a>		</li>
+		<li id="wp-admin-bar-support-forums"><a class="ab-item" href="http://wordpress.org/support/">Support Forums</a>		</li>
+		<li id="wp-admin-bar-feedback"><a class="ab-item" href="http://wordpress.org/support/forum/requests-and-feedback">Feedback</a>		</li></ul></div>		</li>
+		<li id="wp-admin-bar-site-name" class="menupop"><a class="ab-item" aria-haspopup="true" href="http://localhost:8888/">TKO</a><div class="ab-sub-wrapper"><ul id="wp-admin-bar-site-name-default" class="ab-submenu">
+		<li id="wp-admin-bar-view-site"><a class="ab-item" href="http://localhost:8888/">Visit Site</a>		</li></ul></div>		</li>
+		<li id="wp-admin-bar-updates"><a class="ab-item" href="http://localhost:8888/wp-admin/update-core.php" title="1 WordPress Update, 1 Plugin Update"><span class="ab-icon"></span><span class="ab-label">2</span><span class="screen-reader-text">1 WordPress Update, 1 Plugin Update</span></a>		</li>
+		<li id="wp-admin-bar-comments"><a class="ab-item" href="http://localhost:8888/wp-admin/edit-comments.php" title="0 comments awaiting moderation"><span class="ab-icon"></span><span id="ab-awaiting-mod" class="ab-label awaiting-mod pending-count count-0">0</span></a>		</li>
+		<li id="wp-admin-bar-new-content" class="menupop"><a class="ab-item" aria-haspopup="true" href="http://localhost:8888/wp-admin/post-new.php" title="Add New"><span class="ab-icon"></span><span class="ab-label">New</span></a><div class="ab-sub-wrapper"><ul id="wp-admin-bar-new-content-default" class="ab-submenu">
+		<li id="wp-admin-bar-new-post"><a class="ab-item" href="http://localhost:8888/wp-admin/post-new.php">Post</a>		</li>
+		<li id="wp-admin-bar-new-media"><a class="ab-item" href="http://localhost:8888/wp-admin/media-new.php">Media</a>		</li>
+		<li id="wp-admin-bar-new-page"><a class="ab-item" href="http://localhost:8888/wp-admin/post-new.php?post_type=page">Page</a>		</li>
+		<li id="wp-admin-bar-new-custom_type"><a class="ab-item" href="http://localhost:8888/wp-admin/post-new.php?post_type=custom_type">Custom Post</a>		</li>
+		<li id="wp-admin-bar-new-user"><a class="ab-item" href="http://localhost:8888/wp-admin/user-new.php">User</a>		</li></ul></div>		</li></ul><ul id="wp-admin-bar-top-secondary" class="ab-top-secondary ab-top-menu">
+		<li id="wp-admin-bar-my-account" class="menupop with-avatar"><a class="ab-item" aria-haspopup="true" href="http://localhost:8888/wp-admin/profile.php" title="My Account">Howdy, tko_admin<img alt="" src="Edit%20Themes%20%E2%80%B9%20TKO%20%E2%80%94%20WordPress_files/596a5b8ff5ccb3ee42ec130b9797cff9.png" class="avatar avatar-16 photo" height="16" width="16"></a><div class="ab-sub-wrapper"><ul id="wp-admin-bar-user-actions" class="ab-submenu">
+		<li id="wp-admin-bar-user-info"><a class="ab-item" tabindex="-1" href="http://localhost:8888/wp-admin/profile.php"><img alt="" src="Edit%20Themes%20%E2%80%B9%20TKO%20%E2%80%94%20WordPress_files/596a5b8ff5ccb3ee42ec130b9797cff9_002.png" class="avatar avatar-64 photo" height="64" width="64"><span class="display-name">tko_admin</span></a>		</li>
+		<li id="wp-admin-bar-edit-profile"><a class="ab-item" href="http://localhost:8888/wp-admin/profile.php">Edit My Profile</a>		</li>
+		<li id="wp-admin-bar-logout"><a class="ab-item" href="http://localhost:8888/wp-login.php?action=logout&amp;_wpnonce=9fb0dfaf00">Log Out</a>		</li></ul></div>		</li></ul>			</div>
+						<a class="screen-reader-shortcut" href="http://localhost:8888/wp-login.php?action=logout&amp;_wpnonce=9fb0dfaf00">Log Out</a>
+					</div>
+
+		
+<div id="wpbody">
+
+<div id="wpbody-content" aria-label="Main content" tabindex="0">
+		<div id="screen-meta" class="metabox-prefs">
+
+			<div id="contextual-help-wrap" class="hidden" tabindex="-1" aria-label="Contextual Help Tab">
+				<div id="contextual-help-back"></div>
+				<div id="contextual-help-columns">
+					<div class="contextual-help-tabs">
+						<ul>
+						
+							<li id="tab-link-overview" class="active">
+								<a href="#tab-panel-overview" aria-controls="tab-panel-overview">
+									Overview								</a>
+							</li>
+												</ul>
+					</div>
+
+										<div class="contextual-help-sidebar">
+						<p><strong>For more information:</strong></p><p><a href="http://codex.wordpress.org/Theme_Development" target="_blank">Documentation on Theme Development</a></p><p><a href="http://codex.wordpress.org/Using_Themes" target="_blank">Documentation on Using Themes</a></p><p><a href="http://codex.wordpress.org/Editing_Files" target="_blank">Documentation on Editing Files</a></p><p><a href="http://codex.wordpress.org/Template_Tags" target="_blank">Documentation on Template Tags</a></p><p><a href="http://wordpress.org/support/" target="_blank">Support Forums</a></p>					</div>
+					
+					<div class="contextual-help-tabs-wrap">
+						
+							<div id="tab-panel-overview" class="help-tab-content active">
+								<p>You can use the Theme Editor to edit the individual CSS and PHP files which make up your theme.</p>
+	<p>Begin by choosing a theme to edit from the dropdown menu and 
+clicking Select. A list then appears of all the template files. Clicking
+ once on any file name causes the file to appear in the large Editor 
+box.</p>
+	<p>For PHP files, you can use the Documentation dropdown to select from
+ functions recognized in that file. Lookup takes you to a web page with 
+reference material about that particular function.</p>
+	<p id="newcontent-description">In the editing area the Tab key enters a
+ tab character. To move below this area by pressing Tab, press the Esc 
+key followed by the Tab key.</p>
+	<p>After typing in your edits, click Update File.</p>
+	<p><strong>Advice:</strong> think very carefully about your site crashing if you are live-editing the theme currently in use.</p>
+	<p>Upgrading to a newer version of the same theme will override changes made here. To avoid this, consider creating a <a href="http://codex.wordpress.org/Child_Themes" target="_blank">child theme</a> instead.</p>							</div>
+											</div>
+				</div>
+			</div>
+				</div>
+				<div id="screen-meta-links">
+					<div id="contextual-help-link-wrap" class="hide-if-no-js screen-meta-toggle">
+			<a href="#contextual-help-wrap" id="contextual-help-link" class="show-settings" aria-controls="contextual-help-wrap" aria-expanded="false">Help</a>
+			</div>
+				</div>
+		<div class="update-nag"><a href="http://codex.wordpress.org/Version_3.6">WordPress 3.6</a> is available! <a href="http://localhost:8888/wp-admin/update-core.php">Please update now</a>.</div><div class="wrap">
+<div id="icon-themes" class="icon32"><br></div><h2>Edit Themes</h2>
+
+<div class="fileedit-sub">
+<div class="alignleft">
+<h3>TKO Rebirth: Contact Row Page Template <span>(include-contact.php)</span></h3>
+</div>
+<div class="alignright">
+	<form action="theme-editor.php" method="post">
+		<strong><label for="theme">Select theme to edit: </label></strong>
+		<select name="theme" id="theme">
+
+	<option value="tko_2013" selected="selected">TKO Rebirth</option>
+	<option value="twentyeleven">Twenty Eleven</option>
+	<option value="twentytwelve">Twenty Twelve</option>		</select>
+		<input name="Submit" id="Submit" class="button" value="Select" type="submit">	</form>
+</div>
+<br class="clear">
+</div>
+	<div id="templateside">
+	<h3>Templates</h3>
+		<ul>
+		<li><a href="http://localhost:8888/wp-admin/theme-editor.php?file=404.php&amp;theme=tko_2013">404 Template<br><span class="nonessential">(404.php)</span></a></li>
+		<li><a href="http://localhost:8888/wp-admin/theme-editor.php?file=archive-custom_type.php&amp;theme=tko_2013">archive-custom_type.php</a></li>
+		<li><a href="http://localhost:8888/wp-admin/theme-editor.php?file=archive.php&amp;theme=tko_2013">Archives<br><span class="nonessential">(archive.php)</span></a></li>
+		<li><a href="http://localhost:8888/wp-admin/theme-editor.php?file=comments.php&amp;theme=tko_2013">Comments<br><span class="nonessential">(comments.php)</span></a></li>
+		<li><a href="http://localhost:8888/wp-admin/theme-editor.php?file=footer.php&amp;theme=tko_2013">Footer<br><span class="nonessential">(footer.php)</span></a></li>
+		<li><a href="http://localhost:8888/wp-admin/theme-editor.php?file=functions.php&amp;theme=tko_2013">Theme Functions<br><span class="nonessential">(functions.php)</span></a></li>
+		<li><a href="http://localhost:8888/wp-admin/theme-editor.php?file=header.php&amp;theme=tko_2013">Header<br><span class="nonessential">(header.php)</span></a></li>
+		<li><a href="http://localhost:8888/wp-admin/theme-editor.php?file=include-contact.php&amp;theme=tko_2013"><span class="highlight">Contact Row Page Template<br><span class="nonessential">(include-contact.php)</span></span></a></li>
+		<li><a href="http://localhost:8888/wp-admin/theme-editor.php?file=index.php&amp;theme=tko_2013">Main Index Template<br><span class="nonessential">(index.php)</span></a></li>
+		<li><a href="http://localhost:8888/wp-admin/theme-editor.php?file=library%2Fadmin.php&amp;theme=tko_2013">admin.php</a></li>
+		<li><a href="http://localhost:8888/wp-admin/theme-editor.php?file=library%2Fbones.php&amp;theme=tko_2013">bones.php</a></li>
+		<li><a href="http://localhost:8888/wp-admin/theme-editor.php?file=library%2Fcustom-post-type.php&amp;theme=tko_2013">custom-post-type.php</a></li>
+		<li><a href="http://localhost:8888/wp-admin/theme-editor.php?file=page-custom.php&amp;theme=tko_2013">Layout - Custom Page Template<br><span class="nonessential">(page-custom.php)</span></a></li>
+		<li><a href="http://localhost:8888/wp-admin/theme-editor.php?file=page-home.php&amp;theme=tko_2013">Layout - Home Page Template<br><span class="nonessential">(page-home.php)</span></a></li>
+		<li><a href="http://localhost:8888/wp-admin/theme-editor.php?file=page-splash.php&amp;theme=tko_2013">Layout - Background Splash Page Template<br><span class="nonessential">(page-splash.php)</span></a></li>
+		<li><a href="http://localhost:8888/wp-admin/theme-editor.php?file=page.php&amp;theme=tko_2013">Page Template<br><span class="nonessential">(page.php)</span></a></li>
+		<li><a href="http://localhost:8888/wp-admin/theme-editor.php?file=search.php&amp;theme=tko_2013">Search Results<br><span class="nonessential">(search.php)</span></a></li>
+		<li><a href="http://localhost:8888/wp-admin/theme-editor.php?file=sidebar.php&amp;theme=tko_2013">Sidebar<br><span class="nonessential">(sidebar.php)</span></a></li>
+		<li><a href="http://localhost:8888/wp-admin/theme-editor.php?file=single-custom_type.php&amp;theme=tko_2013">single-custom_type.php</a></li>
+		<li><a href="http://localhost:8888/wp-admin/theme-editor.php?file=single.php&amp;theme=tko_2013">Single Post<br><span class="nonessential">(single.php)</span></a></li>
+		<li><a href="http://localhost:8888/wp-admin/theme-editor.php?file=taxonomy-custom_cat.php&amp;theme=tko_2013">taxonomy-custom_cat.php</a></li>
+	</ul>
+	<h3>Styles</h3>
+	<ul>
+		<li><a href="http://localhost:8888/wp-admin/theme-editor.php?file=style.css&amp;theme=tko_2013">Stylesheet<br><span class="nonessential">(style.css)</span></a></li>
+</ul>
+</div>
+	<form name="template" id="template" action="theme-editor.php" method="post">
+	<input id="_wpnonce" name="_wpnonce" value="2f9ee646a2" type="hidden"><input name="_wp_http_referer" value="/wp-admin/theme-editor.php?file=include-contact.php&amp;theme=tko_2013" type="hidden">		<div><textarea cols="70" rows="30" name="newcontent" id="newcontent" aria-describedby="newcontent-description">&lt;?php
+/*
+Template Name: Contact Row
+*/
+?&gt;
+
+&lt;div class="site-row"&gt;
+&lt;ul class="box-row"&gt;
+&lt;li class="col-3"&gt;
+&lt;h2&gt;Business Inquiries&lt;/h2&gt;
+&lt;p&gt;
+
+&lt;script language="JavaScript"&gt;&lt;!--
+var name = "hello";
+var domain = "tkoadvertising.com";
+document.write('&lt;a href=\"mailto:' + name + '@' + domain + '\"&gt;');
+document.write(name + '@' + domain + '&lt;/a&gt;');
+// --&gt;&lt;/script&gt;
+
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;li class="col-3"&gt;
+&lt;h2&gt;Austin, TX Office&lt;/h2&gt;
+&lt;p&gt;
+700 N. Lamar 200B &lt;br /&gt;
+Austin, Texas 78703
+    &lt;/p&gt;
+&lt;/li&gt;
+&lt;li class="col-3"&gt;
+&lt;h2&gt;Sante Fe, NM Office&lt;/h2&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;/div&gt;
+</textarea>
+		<input name="action" value="update" type="hidden">
+		<input name="file" value="include-contact.php" type="hidden">
+		<input name="theme" value="tko_2013" type="hidden">
+		<input name="scrollto" id="scrollto" value="0" type="hidden">
+		</div>
+	
+		<div>
+		<p class="submit"><input name="submit" id="submit" class="button button-primary" value="Update File" type="submit"></p>		</div>
+	</form>
+<br class="clear">
+</div>
+<script type="text/javascript">
+/* <![CDATA[ */
+jQuery(document).ready(function($){
+	$('#template').submit(function(){ $('#scrollto').val( $('#newcontent').scrollTop() ); });
+	$('#newcontent').scrollTop( $('#scrollto').val() );
+});
+/* ]]> */
+</script>
+
+<div class="clear"></div></div><!-- wpbody-content -->
+<div class="clear"></div></div><!-- wpbody -->
+<div class="clear"></div></div><!-- wpcontent -->
+
+<div id="wpfooter">
+<p id="footer-left" class="alignleft"><span id="footer-thankyou">Thank you for creating with <a href="http://wordpress.org/">WordPress</a>.</span></p>
+<p id="footer-upgrade" class="alignright"><strong><a href="http://localhost:8888/wp-admin/update-core.php">Get Version 3.6</a></strong></p>
+<div class="clear"></div>
+</div>
+
+<script type="text/javascript">
+/* <![CDATA[ */
+var commonL10n = {"warnDelete":"You are about to permanently delete the selected items.\n  'Cancel' to stop, 'OK' to delete."};/* ]]> */
+</script>
+<script type="text/javascript" src="Edit%20Themes%20%E2%80%B9%20TKO%20%E2%80%94%20WordPress_files/load-scripts_002.js"></script>
+
+<div class="clear"></div></div><!-- wpwrap -->
+<script type="text/javascript">if(typeof wpOnload=='function')wpOnload();</script>
+
+
+</body></html>
