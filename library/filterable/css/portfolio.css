@@ -146,11 +146,12 @@ ul#portfolio-list li a img {
 	    /*width: 400px;
 	    margin-top: -220px;
 	    margin-left: -190px;*/
-	    width: 100%;
+	    width: 105%;
 	    height: auto;
 	    top: 50%;
 	    transform:translateY(-50%);
 	    position: absolute;
+	    left: -2%;
 }
 
 

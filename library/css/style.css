@@ -3358,14 +3358,17 @@ span.wpcf7-list-item {
 
 /* Project Single */
 
-
-
-
-.projIntro {
+.projIntroParagraph {
 	min-height: 400px;
 	background-color: #5c9a98;
+	text-align: center;
+	font-family:'Montserrat', sans-serif;
+	font-weight:400;
+	font-size: 1em;
+	background-color:#f8981d;
 }
-.projStat {
+
+.projIntroStat {
 	text-align: center;
 	background-color:#f8981d;
 	color: #ffffff;
@@ -3375,3 +3378,4 @@ span.wpcf7-list-item {
 	vertical-align: middle;
 }
 
+/*Portfolio*/

@@ -41,21 +41,11 @@ single-bookmarks.php
 		                	<div class="inner-content">
 		                		<h1><?php the_field('project'); ?></h1>
 		                			<div id="project-client">
-		                				<h4>Client</h4>
-		                				<h3><?php the_field('client'); ?></h3>
+		                				<h2><?php the_field('client'); ?></h2>
 		                			</div>
 		                			<div id="project-desc">
-		                				<h4>Details</h4>
-		                				<p><?php the_field('details'); ?></p>
+		                				<h3><?php the_field('details'); ?></h3>
 		                			</div>
-		                			<div id="project-share">
-		                				<h4>Share</h4>
-		                				<a href="https://twitter.com/share" class="twitter-share-button" data-related="tkoadvertising" data-count="none" data-hashtags="tkoadvertising">Tweet</a>
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-
-
-<a name='fb_share' style="float:left; margin:0;" type='button_count' href='http://www.facebook.com/sharer.php?appId={YOUR APP ID}&link=<?php the_permalink() ?>' rel='nofollow'>Share</a><script src='http://static.ak.fbcdn.net/connect.php/js/FB.Share' type='text/javascript'></script>
-                </div>
                 </div><!--inner-content-->
 
                 </section><!-- project-details -->
@@ -89,29 +79,28 @@ single-bookmarks.php
 
                 <li id="project-client">
 
-                <h4>Client</h4>
-                	<h3><?php the_field('client'); ?></h3>
+                <h2><?php the_field('client'); ?></h2>
                 </li>
                 <li id="project-desc">
-                <h4>Details</h4>
                	<p><?php the_field('details'); ?></p>
-                </li>
-                <li id="project-share">
-                <h4>Share</h4>
-
-<a href="https://twitter.com/share" class="twitter-share-button" data-related="tkoadvertising" data-count="none" data-hashtags="tkoadvertising">Tweet</a>
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-
-
-<a name='fb_share' style="float:left; margin:0;" type='button_count' href='http://www.facebook.com/sharer.php?appId={YOUR APP ID}&link=<?php the_permalink() ?>' rel='nofollow'>Share</a><script src='http://static.ak.fbcdn.net/connect.php/js/FB.Share' type='text/javascript'></script>
                 </li>
                 </ul><!-- project-details -->
                 <div id="main" class="first clearfix" role="main">
                 	<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
                 		<article id="post-<?php the_ID(); ?>" <?php post_class('clearfix'); ?> role="article" itemscope itemtype="http://schema.org/BlogPosting">
                 			<section class="entry-content clearfix" itemprop="articleBody">
+
+								<div class="container-fluid projIntroParagraph">
+									<div class="row">
+										<div class="col-sm-8 push-sm-2">
+											<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ac diam vitae orci mattis luctus. Suspendisse elementum metus lectus, porttitor pellentesque dui lacinia sed. Pellentesque sed mauris sed felis venenatis posuere nec vitae turpis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nam sodales, leo vel facilisis sodales, leo nisl lacinia turpis, sit amet volutpat libero nulla ac odio. Vestibulum et massa metus. </p>
+										</div>
+									</div>
+								</div>
+
 								<div class="container-fluid projIntro parent">
-									<div class="row projStat child">
+
+									<div class="row projIntroStat child">
 										<div class="col-sm-4">
 											100% something
 										</div>
@@ -123,6 +112,8 @@ single-bookmarks.php
 										</div>
 									</div>
 								</div>
+
+
 								</section> <!-- end article section -->
 
 								<footer class="article-footer">

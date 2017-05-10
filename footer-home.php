@@ -33,7 +33,7 @@
 
 
 <!-- all js scripts are loaded in library/bones.php -->
-<?php wp_footer(); ?>
+
 <!-- <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/library/js/twitterfeed.js"></script>
 <script type="text/javascript">
 	var userFeed0 = new Instafeed({
@@ -54,5 +54,6 @@
 <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/library/togglePanel/js/togglePanel.js"></script>
 <!-- Slideshows -->
 <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/library/js/navscripts.js"></script>
+<?php wp_footer(); ?>
 </body>
 </html> <!-- end html -->
