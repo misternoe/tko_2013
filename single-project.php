@@ -38,14 +38,9 @@ single-bookmarks.php
 				<div class="project_cover_cont">
                 	<span class="fade"></span>
 		                <section id="project-details">
-		                	<div class="inner-content">
-		                		<h1><?php the_field('project'); ?></h1>
-		                			<div id="project-client">
-		                				<h2><?php the_field('client'); ?></h2>
-		                			</div>
-		                			<div id="project-desc">
-		                				<h3><?php the_field('details'); ?></h3>
-		                			</div>
+							<div class="project-headline-parent">
+								   <div class="child">
+									   <h1><?php the_field('projHeadline'); ?></h1></div>
                 </div><!--inner-content-->
 
                 </section><!-- project-details -->
@@ -86,11 +81,10 @@ single-bookmarks.php
                 </li>
                 </ul><!-- project-details -->
                 <div id="main" class="first clearfix" role="main">
-                	<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
                 		<article id="post-<?php the_ID(); ?>" <?php post_class('clearfix'); ?> role="article" itemscope itemtype="http://schema.org/BlogPosting">
-                			<section class="entry-content clearfix" itemprop="articleBody">
+							<?php include("modules-loop.php"); ?>
 
-								<div class="container-fluid projIntroParagraph">
+					<div class="container-fluid projIntroParagraph">
 									<div class="row">
 										<div class="col-sm-8 push-sm-2">
 											<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ac diam vitae orci mattis luctus. Suspendisse elementum metus lectus, porttitor pellentesque dui lacinia sed. Pellentesque sed mauris sed felis venenatis posuere nec vitae turpis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nam sodales, leo vel facilisis sodales, leo nisl lacinia turpis, sit amet volutpat libero nulla ac odio. Vestibulum et massa metus. </p>
@@ -114,34 +108,11 @@ single-bookmarks.php
 								</div>
 
 
-								</section> <!-- end article section -->
 
-								<footer class="article-footer">
-									<?php the_tags('<p class="tags"><span class="tags-title">' . __('Tags:', 'bonestheme') . '</span> ', ', ', '</p>'); ?>
-
-								</footer> <!-- end article footer -->
-
-								<?php comments_template(); ?>
 
 							</article> <!-- end article -->
 
-						<?php endwhile; ?>
 
-						<?php else : ?>
-
-							<article id="post-not-found" class="hentry clearfix">
-									<header class="article-header">
-										<h1><?php _e("Oops, Post Not Found!", "bonestheme"); ?></h1>
-									</header>
-									<section class="entry-content">
-										<p><?php _e("Uh Oh. Something is missing. Try double checking things.", "bonestheme"); ?></p>
-									</section>
-									<footer class="article-footer">
-											<p><?php _e("This is the error message in the single.php template.", "bonestheme"); ?></p>
-									</footer>
-							</article>
-
-						<?php endif; ?>
 
 					</div> <!-- end #main -->
 
@@ -149,7 +120,6 @@ single-bookmarks.php
 
 				</div> <!-- end #inner-content -->
 
-<h1 class="page-title page-header-title">Work</h1>
 
 			</div> <!-- end #content -->
 

@@ -72,7 +72,6 @@
         </script>
 <script>
 $(document).ready( function() {
-$(".page-header-title").appendTo(".header #inner-content"); // move page-title into header, for customized layout reasons.
 $("#featured-cover").prependTo("#content");
 
 });
@@ -106,22 +105,14 @@ $("#featured-cover").prependTo("#content");
   <div id="status">&nbsp;</div>
 </div>
 
-
-
-
 		<div id="container">
-
-
-
     		<header class="header" id="topnav" role="banner">
-
 				<div id="inner-content" class="wrap clearfix">
 
 					<!-- to use a image just replace the bloginfo('name') with your img src and remove the surrounding <p> -->
 					<a id="logo" class="h1" title="<?php bloginfo('name'); ?>" href="<?php echo home_url(); ?>"></a>
+					<a class="desktop-only page-title page-header-title" href="#">Work</a><span class="desktop-only page-title page-header-title">|</span><h1 class="page-title page-header-title"><?php the_field('client'); ?></h1>
 
-					<!-- if you'd like to use the site description you can un-comment it below -->
-					<?php // bloginfo('description'); ?>
 
                 <a class="menu-btn" id="showMenu" title="Menu">Menu</a>
                 <nav id="main-menu" class="">

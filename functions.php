@@ -245,6 +245,7 @@ add_filter( 'tiny_mce_before_init', 'custom_mce_styles'  );
  */
 function tko_scripts() {
 	wp_enqueue_style( 'tko-grid', get_template_directory_uri() . '/library/css/bootstrap.min.css');
+	wp_enqueue_style( 'tko-modules', get_template_directory_uri() . '/library/css/modules.css');
 	wp_enqueue_script( 'jq-match-height', get_template_directory_uri() . '/library/js/jquery.matchHeight-min.js', array(), '20130115', true );
 	wp_enqueue_script( 'bootstrap', get_template_directory_uri() . '/library/js/bootstrap.min.js', array(), '20130115', true );
 }

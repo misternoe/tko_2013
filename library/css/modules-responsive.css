@@ -1,0 +1,317 @@
+@media (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), (-webkit-min-device-pixel-ratio: 1.5), (min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx)
+{
+	body {
+	background-size: 648px 648px;
+}
+	}
+
+
+@media screen and (min-width: 10px) {
+p {
+    font-size: 0.85em;
+}
+.desktop-only, #desktop-nav {
+    display: none;
+}
+.mobile-only {
+    display: block;
+}
+
+
+
+
+
+
+
+.gform_body h2 {
+	font-size: .8em;
+}
+.inlineblock {
+    padding: 0 10px;
+}
+
+.feature-box h2 {
+	font-size: 2em;
+    line-height: 1.1em;
+    display: table-cell;
+}
+.feature-icon {
+	display: table-cell;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 481px) {
+	#page {
+    	max-width: 768px;
+	}
+
+}
+
+
+@media screen and (max-width: 767px) {
+	#site-menu-btn {
+	    display: block;
+	}
+	#mobile-nav {
+	    margin-top: 86px;
+	    position: absolute;
+	    top: -1500px;
+	    width: 100%;
+		background-color: #ffffff;
+	    color: #00838f;
+	}
+	.main-navigation {
+		width: 100%;
+		height: 86px;
+		display: block;
+		top: 0;
+		margin-top: 0;
+		z-index: 9999999;
+	}
+	#logo {
+	    z-index: 9999;
+	    width: 92px;
+	    height: 66px;
+	    background-size: cover;
+	    margin: 10px 20px;
+	}
+	#masthead {
+		height: 88px;
+	}
+	.menu a:hover,
+	.menu a:active {
+	    text-decoration: none;
+	    background-color: #ffffff;
+	    color: #00bcaf;
+	}
+	.main-navigation li {
+	    float: left;
+	}
+	.secondary-nav, .lang-item {
+	    margin: 0;
+	    padding: 0;
+	}
+
+	ul#primary-menu {
+		margin-left: 0;
+   }
+	
+	ul#primary-menu li a:hover,
+	ul#secondary_en li a:hover {
+	    color: #ffffff;
+	    text-decoration: none;
+	}
+	
+	ul#primary-menu li a	 {
+		margin: 0;
+		padding: 0;
+	}
+	
+	#primary-menu li,
+	#secondary_en li {
+		width: 100%;
+	}
+	.menu-main_es-container,
+	.menu-main_en-container,
+	.menu-secondary_en-container,
+	.menu-secondary_en-spanish-container {
+	    display: block;
+	    margin: 0;
+	    position: relative;
+	    width: 100%;
+	}
+
+	.menu-main_es-container,
+	.menu-main_en-container,
+	.menu-secondary_en-container,
+	.menu-secondary_en-spanish-container {
+	    display: block;
+	    margin: 0;
+	    position: relative;
+	    width: 100%;
+	}
+	
+	.menu a:link,
+	.menu-secondary_en-container a:link,
+	.menu-secondary_es-container a:link
+	{
+  		font-family: 'korolev', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+		font-weight: 300;
+		font-style: normal;
+	    display: block;
+	    font-size: 1.375em;
+	    line-height: 2.2em;
+	    padding-left: 20px;
+	    border-bottom-width: 1px;
+	    border-bottom-style: solid;
+	    border-bottom-color: #ccc;
+	    text-align: center;
+	}
+	.menu a:link, 
+	.menu a:visited {
+	border-bottom-color: #ccc;
+	}
+	
+	.breadcrumb {
+		padding: 6px 20px 0!important;
+	}
+	.slide-overlay a {
+	    opacity: 0;
+	}
+
+
+
+
+
+
+	.nav-wings-bottom {
+	top: 89px;
+	}
+	.nav-wings-top {
+	height: 115px;
+	}
+	.event-module h3 {
+	font-size: 1.5em;
+}
+}
+
+@media screen and (min-width: 768px) {
+.desktop-only {
+    display: block;
+}
+#desktop-nav {
+    display: inline-block;
+    position: absolute;
+	width: 100%;
+}
+.mobile-only {
+    display: none!important;
+}
+#menu-main {
+    display: none;
+}
+#mobile-nav {
+    display: none;
+    position: absolute;
+    top: -1500px;
+    width: 100%;
+}
+
+#primary-menu li {
+	font-size: 1.50em;
+}
+
+.menu-secondary_en-container a:link,
+.menu-secondary_en-spanish-container a:link {
+    display: inline-block;
+    font-size: 1em;
+    color: #ffffff;
+}
+
+.menu-main_en-container,
+.menu-main_es-container {
+	right: 0;
+	text-align: right;
+	top: 80px;
+}
+
+#page {
+    max-width: 1200px;
+}
+#site-menu-btn {
+    display: none;
+}
+
+
+
+
+.site-footer {
+    min-height: 200px !important;
+    width: 100%;
+}
+
+.flex-control-nav {
+    bottom: 30px;
+}
+
+
+
+/*Text Photobox*/
+
+
+
+
+
+
+#footer-social h5 {
+	display: block;
+}
+.pc-title {
+	font-size: 2em;
+}
+#pc-detail p {
+	font-size: 1em;
+}
+
+.footer-logo img {
+	max-height: 130px;
+}
+
+}
+
+
+@media screen and (min-width: 890px) {
+
+
+
+	/*.text-three-column div:nth-of-type(3) {
+	padding-left: 100px;
+	}
+	.text-three-column div:nth-of-type(4) {
+	padding-left:80px;
+	}*/
+
+}
+
+@media screen and (min-width: 1024px) {
+	.menu-main_en-container,
+	.menu-main_es-container {
+		top: 70px;
+	}
+	#primary-menu li {
+	font-size: 1.938em;
+	}
+	.feature-box h2 {
+    font-size: 2.6em;
+    line-height: .9em;
+	}
+
+	.gfield h2 {
+		font-size: .9em !important;
+	}
+
+
+
+	.slide-title {
+	max-width: 80%;
+	font-size: 2.5em;
+	}
+}
